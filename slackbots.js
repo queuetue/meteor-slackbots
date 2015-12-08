@@ -1,2 +1,4 @@
 // Write your package code here!
-SlackBot = Npm.require('slackbots') ;
+if (Meteor.isServer){
+  SlackBot = Npm.require('slackbots') ;
+}

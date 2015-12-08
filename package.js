@@ -1,6 +1,6 @@
 Package.describe({
   name: 'queuetue:slackbots',
-  version: '0.1.1',
+  version: '0.1.5',
   // Brief, one-line summary of the package.
   summary: 'Slackbots NPM smart package for Meteor',
   // URL to the Git repository containing the source code for this package.
@@ -17,8 +17,10 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
-  api.export('SlackBot');
-  api.addFiles('slackbots.js');
+
+  api.addFiles('slackbots.js','server');
+
+  api.export('SlackBot','server');
 });
 
 Package.onTest(function(api) {
