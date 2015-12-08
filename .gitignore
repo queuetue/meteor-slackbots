@@ -1,0 +1,8 @@
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+/settings.json
+.idea/
+.tags_swap
+tags
+.tags*
